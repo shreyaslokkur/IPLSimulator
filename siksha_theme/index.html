@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Siksha - IPL Simulator</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+    <script src=" http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+   
+    <script src="Scripts/SimulatorController.js" type="text/javascript"></script> 
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">S I K S H A</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" id="lnkAuction" href="#Auction">Auction</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" id="chSqd" href="#ChooseSquad">Choose Squad</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#CreateMatch">Create Match</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="#Tournament">Tournament</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                       <div class"row"><p>Tournament Size :&nbsp;&nbsp;<input type="text" id="txtTeamSize" placeholder="Enter Tournament Size .." />&nbsp;&nbsp;<a href="#" id="btnAddTextBox" class="btn btn-default"><i class="fa fa-play-circle"></i></a></p></div> 
+                        
+                         <div id="TeamNamesDiv" style="margin-left: 133px;">
+        
+        
+                         </div>
+
+                        <p class="intro-text">Transactional to Transformational Learning Solutions<br>Innovative Learning Methodology</p>
+                    
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="Auction" class="Container-fluid">
+        <div class="tab-pane" style="border: 1px solid #ddd;width:98%;min-height:750px;margin:5px" >
+            <div style="padding:8px">
+            <br><br>
+                 <div class="AuctionImg">
+                   <img src="img/Virat.jpg" />
+                </div>
+                  
+                
+                <div class="pie degree pull-right" style="margin-top: 49px;">
+                  <span class="block"></span>
+                  <span id="time">0</span>
+                </div>
+                           
+                 <div class="TeamName" style="font-weight:bold;margin-top:52px">Virat Kohli
+
+                 </div>
+
+                
+                <div style="font-weight:bold;margin-top:100px"><a style="margin-left: 19px;padding: 13px;padding-left: 48px;padding-right: 48px;" id="btnStartAuction" class="btn btn-default" >Start Auction</a> </div>
+                <div style="clear:both">
+                     <hr />
+
+                </div>
+               <div class="container unitCntr" style="margin-top: 8px;border: 1px solid #ddd;width:600px;height:450px;float:left;margin-right:10px;box-shadow: 0 1px 3px rgba(34,25,25,0.4);-moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);">
+                    <div class="unitHeader">
+                                <span style="font-weight: bold;font-size: larger;text-transform:uppercase">Player Stats</span>
+                    </div>  
+                     <div class="container-fluid" style="clear:both;text-transform: uppercase">
+                          <div class="row top-buffer"> 
+                         <div class="col-md-8 top-buffer">Rating :</div>
+                                        <div class="col-md-4">
+                                            <img src="img/5-star.png" />
+                            </div>
+                              </div>
+
+                                    <div class="row top-buffer">
+                                        <div class="col-md-8">Role :</div>
+                                        <div class="col-md-4">Batsman</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Base Price :</div>
+                                        <div class="col-md-4">8,00,000</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Batting Average :</div>
+                                        <div class="col-md-4">50.40</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Nationality :</div>
+                                        <div class="col-md-4">Indian</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Born :</div>
+                                        <div class="col-md-4">November 5, 1988, Delhi</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Playing role :</div>
+                                        <div class="col-md-4">Middle-order batsman</div>
+                                    </div>
+                                      <div class="row top-buffer">
+                                        <div class="col-md-8">Batting Style :</div>
+                                        <div class="col-md-4">Right-Handed</div>
+                                    </div>
+                                    <div class="row top-buffer">
+                                        <div class="col-md-8">Bowling Style :</div>
+                                        <div class="col-md-4">Right Arm Medium</div>
+                                    </div>
+                                    <div class="row top-buffer">
+                                        <div class="col-md-8">Major Teams :</div>
+                                        <div class="col-md-4">India, Delhi, India Red, India Under-19s, Royal Challengers Bangalore</div>
+                                    </div>
+                                    </div>
+                             
+
+                     </div>
+               </div>
+               <div class="container unitCntr" style="border: 1px solid #ddd;width:900px;min-height:450px;float:left;box-shadow: 0 1px 3px rgba(34,25,25,0.4);-moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);">
+                   
+                    <div class="unitHeader">
+                                <span style="font-weight: bold;font-size: larger;text-transform:uppercase">Player Profile</span>
+                    </div>
+                   <p class="ciPlayerprofiletext1">Kohli himself readily admitted to committing mistakes and walking the wrong path in the immediate aftermath of becoming only the second India captain to win the Under-19 World Cup in 2008. Monikers such as brash, arrogant were stuck on him as Kohli struggled to balance his career and the adulation that came with success. But some introspection and the expert guidance from the Indian team's seniors allowed Kohli to bounce back. </p>
+                    <p class="ciPlayerprofiletext1">Today he is recognised for his growing maturity, and, more importantly, for his superb skills with bat in hand. Even in the presence, or absence, of his other prolific partners, Kohli has become one of the most dependable batsmen in the Indian middle order. His defensive technique is organised, he is an accomplished strokeplayer all round the wicket - his timing on the legside is especially silken - and he relishes performing when the pressure is on. He was an important presence during India's World Cup triumph, where he struck a vital century in the tournament opener and then played his hand in the summit clash with a patient 35 which formed a crucial part of the third-wicket partnership with Gautam Gambhir that allowed India to recover from the early loss of the openers. Then came the tour to Australia later that year, when he truly proved he belonged at the highest levels in both forms of the game. On a tour in which India's senior batsmen struggled throughout, Kohli stood out, scoring India's only Test hundred - a mature, composed innings in Adelaide. And with India almost out of the CB Series, Kohli uncorked his best with an astonishing 86-ball unbeaten 133 to help India chase down 321 in under 40 overs. Much was expected of him when he occupied the spot left vacant by VVS Laxman before India's home season in 2012. He got off to a bright start, hitting a century and two fifties against New Zealand.</p>
+                   <p class="ciPlayerprofiletext1">His gung-ho attitude, his youthful charm and his aggression have also made him the mascot of his IPL team, the Royal Challengers Bangalore. Kohli has repaid the franchise by helping Bangalore reach the finals of the 2009 and 2011 IPL seasons and then almost single-handedly taking them to the title clash in the 2011 Champions League Twenty20. He was handed the Royal Challengers Bangalore' captaincy for the 2013 IPL season, with the intention of grooming him as the future captain of India. With MS Dhoni's injury during the West Indies tri-series, Kohli was given the honour of captaining India on their tour of Zimbabwe in July 2013. His fantastic fielding, and the ability to assess situations and seize the moment, makes Kohli one of the most exciting young talents to watch out for in the international circuit.  </p>
+               </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="ChooseSquad" class="Container-fluid">
+       <div style="padding:8px">
+        <br><br>
+       <!-- <ul class="nav nav-tabs" id="tabs">
+       
+        </ul>
+    
+        <div class="tab-content">
+       
+        </div>-->
+
+           <ul class="nav nav-tabs" id="tabs">
+       
+        <li><a id="bloreTab" href="#tab_Bangalore" data-toggle="tab" aria-expanded="true"> Bangalore</a></li>
+        <li ><a id="chennaiTab" href="#tab_Chennai" data-toggle="tab" aria-expanded="true"> Chennai</a></li>
+        <li ><a href="#tab_Pune" data-toggle="tab" aria-expanded="true"> Pune</a></li>
+        <li ><a href="#tab_Kolkata" data-toggle="tab" aria-expanded="true"> Kolkata</a></li>
+
+        </ul>
+        <div class="tab-content">
+       
+            <div class="tab-pane" id="tab_Bangalore">
+                <div class="teamnameimage">
+                    <img src="img/TeamImage.gif" /> 
+                </div>
+                <div class="TeamName">Bangalore</div>
+                <br /><br /><br /><br />
+               <hr />
+                <div class="column one">
+                    <div class="colOneSplitOne">
+                        <div class="unitCntr" style="width:485px;"> 
+                            <div class="unitHeader">
+                                <span style="font-weight: bold;font-size: larger;">Current Squad</span>
+                            </div>
+                            <div class="teamcreationselectouter">
+               
+              <div class="budgetleft" style="text-align:center;">
+               <!-- <div class="onoff" id="on_glow" ></div>
+                <div class="onoffglow" id="on"  ></div> -->
+               <span class="statstextspan" style="font-weight:bold;display: inline-block;float: none;margin-top: 6px;"> Budget Left: &nbsp;50,000</span>
+                <!--<p id="budgetleftval" style="font-weight:bold;display: inline-block;float: none;">50,000</p>-->
+              </div>
+               <div class="subsleft"style="text-align:center;">
+               <!--  <div class="onoff" id="on_glow" ></div>
+                <div class="onoffglow" id="on"  ></div> -->
+               <span class="statstextspan"  style="font-weight:bold;display: inline-block;float: none;margin-top: 6px;"> Subs Left:&nbsp;8</span>
+                <!--<p class="statstextp" id="subsleftval" style="font-weight:bold;">8</p>-->
+              </div>
+              
+               <div class="teamblnce" style="width:160px;">
+                <div class="onoff" id="on_glow"></div>
+                <div class="onoffglow" id="on"></div>
+                <p class="statstextp" style="line-height: 13px;margin-top: 11px;">Squad Balance</p>
+                
+                
+              </div>
+              <div class="elevplayers" style="width:160px;">
+                <div class="onoff" id="off_glow"></div>
+                <div class="onoffglow" id="off" style="display: block;"></div>
+                 <p class="statstextp" style="line-height: 13px;margin-top: 11px;">Eleven Players</p>
+                
+              </div>
+             
+              <div class="franchspread" style="width:160px;border-right:0px;">
+                <div class="onoff" id="Div3"></div>
+                <div class="onoffglow" id="Div4"></div>
+                 <p class="statstextp" style="line-height: 13px;margin-top: 11px;">Team Spread</p>
+               
+              </div>
+
+          
+              
+            </div>
+                           <div class="container-fluid">
+                            <div class="row PlayerSorterHead" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">#</div>
+                                <div class="col-xs-2">Role</div>
+                                <div class="col-xs-2">Name</div>
+                                <div class="col-xs-2">Category</div>
+                                <div class="col-xs-2">Price</div>
+                                <div class="col-xs-2">Move</div>
+                            </div>
+                         <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">1</div>
+                                <div class="col-xs-2">
+                                    <img src="img/wicketkeeper.PNG" /></div>
+                                <div class="col-xs-2">Dhoni</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">8,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                            <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">2</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Virat</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">8,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                 <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">3</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Dhawan</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">5,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                               <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">4</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Hussey</div>
+                                <div class="col-xs-2">Foriegn</div>
+                                <div class="col-xs-2">5,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">5</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Bevan</div>
+                                <div class="col-xs-2">Foriegn</div>
+                                <div class="col-xs-2">8,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                               <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">6</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat_ball.PNG" /></div>
+                                <div class="col-xs-2">Jadeja</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">4,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                               <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">7</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat_ball.PNG" /></div>
+                                <div class="col-xs-2">Smith</div>
+                                <div class="col-xs-2">Foriegn</div>
+                                <div class="col-xs-2">6,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                               <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">8</div>
+                                <div class="col-xs-2">
+                                    <img src="img/ball.PNG" /></div>
+                                <div class="col-xs-2">Ishant</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">3,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                 <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">9</div>
+                                <div class="col-xs-2">
+                                    <img src="img/ball.PNG" /></div>
+                                <div class="col-xs-2">Ashwin</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">5,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">10</div>
+                                <div class="col-xs-2">
+                                    <img src="img/ball.PNG" /></div>
+                                <div class="col-xs-2">Lee</div>
+                                <div class="col-xs-2">Foriegn</div>
+                                <div class="col-xs-2">7,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                 <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">11</div>
+                                <div class="col-xs-2">
+                                    <img src="img/ball.PNG" /></div>
+                                <div class="col-xs-2">Kumar</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">3,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="column two">
+
+                      <div class="colOneSplitOne">
+                        <div class="unitCntr" style="width:485px;"> 
+                            <div class="unitHeader">
+                                <span style="font-weight: bold;font-size: larger;">Other Players</span>
+                            </div>
+
+                            <div class="teamcreationselectouter" style="width:480px;margin-left: 83px;">
+                                <div style="float:left;padding:5px"><a class="btn btn-default btn-sm" href="#" >Batsmen&nbsp;<i class="fa fa-filter"></i></a></div>
+                                <div style="float:left;padding:5px"><a class="btn btn-default btn-sm" href="#" >Bowler&nbsp;<i class="fa fa-filter"></i></a></div>
+                                <div style="float:left;padding:5px"><a class="btn btn-default btn-sm" href="#" >All Rounders&nbsp;<i class="fa fa-filter"></i></a></div>
+                            </div>
+
+                              <div class="container-fluid">
+                            <div class="row PlayerSorterHead" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">Move</div>
+                                <div class="col-xs-2">#</div>
+                                <div class="col-xs-2">Role</div>
+                                <div class="col-xs-2">Name</div>
+                                <div class="col-xs-2">Category</div>
+                                <div class="col-xs-2">Price</div>
+                                
+                            </div>
+                         <div class="row" style="border: 1px solid #ddd;">
+                              <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                <div class="col-xs-2">1</div>
+                                <div class="col-xs-2 ">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Mishra</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">2,00,000</div>
+                               
+                            </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">2</div>
+                                    <div class="col-xs-2 ">
+                                         <img src="img/bat_ball.PNG" /></div>
+                                    <div class="col-xs-2">Bravo</div>
+                                    <div class="col-xs-2">foriegn</div>
+                                    <div class="col-xs-2">5,00,000</div>
+                                </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">3</div>
+                                    <div class="col-xs-2 ">
+                                        <img src="img/ball.PNG" /></div>
+                                    <div class="col-xs-2">Pandey</div>
+                                    <div class="col-xs-2">Indian</div>
+                                    <div class="col-xs-2">1,00,000</div>
+                                </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">4</div>
+                                    <div class="col-xs-2 ">
+                                        <img src="img/bat.PNG" /></div>
+                                    <div class="col-xs-2">Dravid</div>
+                                    <div class="col-xs-2">Indian</div>
+                                    <div class="col-xs-2">9,00,000</div>
+                                </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">5</div>
+                                    <div class="col-xs-2 ">
+                                        <img src="img/ball.PNG" /></div>
+                                    <div class="col-xs-2">steyn</div>
+                                    <div class="col-xs-2">foriegn</div>
+                                    <div class="col-xs-2">5,00,000</div>
+                                </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">6</div>
+                                    <div class="col-xs-2 ">
+                                        <img src="img/ball.PNG" /></div>
+                                    <div class="col-xs-2">Shami</div>
+                                    <div class="col-xs-2">Indian</div>
+                                    <div class="col-xs-2">4,00,000</div>
+                                </div>
+
+                              
+
+                             
+
+                            </div>
+
+                 </div>
+                       </div>
+               
+               </div>
+
+                 <div class="column two">
+                      <div class="colOneSplitOne">
+                          <div class="unitCntr" style="width:485px;"> 
+                                <div class="unitHeader">
+                                    <span style="font-weight: bold;font-size: larger;">Player Profile</span>
+                                </div>
+                              <div style="float:left">
+                                  <img src="img/Dhoni.png" />
+                              </div>
+                              <div style="float:left;margin-top:8pc">
+                                
+                                    <span style="font-weight: bold;font-size: 33px;text-transform: uppercase;;text-align:center">M S Dhoni</span>
+                                
+                              </div>
+                              <hr />
+                                <div class="container-fluid" style="clear:both;text-transform: uppercase">
+                                   
+                                    <div class="row top-buffer">
+                                        <div class="col-md-8">Rating :</div>
+                                        <div class="col-md-4">
+                                            <img src="img/5-star.png" /></div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Role :</div>
+                                        <div class="col-md-4">WicketKeeper Batsman</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Price :</div>
+                                        <div class="col-md-4">8,00,000</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Batting Average :</div>
+                                        <div class="col-md-4">50.40</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Nationality :</div>
+                                        <div class="col-md-4">Indian</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Born :</div>
+                                        <div class="col-md-4">July 7, 1981, Ranchi, Jharkand</div>
+                                    </div>
+                                    
+                                      <div class="row top-buffer">
+                                        <div class="col-md-8">Batting Style :</div>
+                                        <div class="col-md-4">Right-Handed</div>
+                                    </div>
+                                    <div class="row top-buffer">
+                                        <div class="col-md-8">Bowling Style :</div>
+                                        <div class="col-md-4">Right Arm Medium</div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                </div>
+            </div>
+
+             <div class="tab-pane" id="tab_Chennai">
+                <div class="teamnameimage">
+                    <img src="img/TeamImage.gif" /> 
+                </div>
+                <div class="TeamName">Chennai</div>
+                <br /><br /><br /><br />
+               <hr />
+               <div class="column one">
+                    <div class="colOneSplitOne">
+                        <div class="unitCntr" style="width:485px;"> 
+                            <div class="unitHeader">
+                                <span style="font-weight: bold;font-size: larger;">Current Squad</span>
+                            </div>
+                            <div class="teamcreationselectouter">
+               
+              <div class="budgetleft" style="text-align:center;">
+               <!-- <div class="onoff" id="on_glow" ></div>
+                <div class="onoffglow" id="on"  ></div> -->
+               <span class="statstextspan" style="font-weight:bold;display: inline-block;float: none;margin-top: 6px;"> Budget Left: &nbsp;50,000</span>
+                <!--<p id="budgetleftval" style="font-weight:bold;display: inline-block;float: none;">50,000</p>-->
+              </div>
+               <div class="subsleft"style="text-align:center;">
+               <!--  <div class="onoff" id="on_glow" ></div>
+                <div class="onoffglow" id="on"  ></div> -->
+               <span class="statstextspan"  style="font-weight:bold;display: inline-block;float: none;margin-top: 6px;"> Subs Left:&nbsp;8</span>
+                <!--<p class="statstextp" id="subsleftval" style="font-weight:bold;">8</p>-->
+              </div>
+              
+               <div class="teamblnce" style="width:160px;">
+                <div class="onoff" id="Div1"></div>
+                <div class="onoffglow" id="Div2"></div>
+                <p class="statstextp" style="line-height: 13px;margin-top: 11px;">Squad Balance</p>
+                
+                
+              </div>
+              <div class="elevplayers" style="width:160px;">
+                <div class="onoff" id="Div5"></div>
+                <div class="onoffglow" id="Div6" style="display: block;"></div>
+                 <p class="statstextp" style="line-height: 13px;margin-top: 11px;">Eleven Players</p>
+                
+              </div>
+             
+              <div class="franchspread" style="width:160px;border-right:0px;">
+                <div class="onoff" id="Div7"></div>
+                <div class="onoffglow" id="Div8"></div>
+                 <p class="statstextp" style="line-height: 13px;margin-top: 11px;">Team Spread</p>
+               
+              </div>
+
+          
+              
+            </div>
+                           <div class="container-fluid">
+                            <div class="row PlayerSorterHead" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">#</div>
+                                <div class="col-xs-2">Role</div>
+                                <div class="col-xs-2">Name</div>
+                                <div class="col-xs-2">Category</div>
+                                <div class="col-xs-2">Price</div>
+                                <div class="col-xs-2">Move</div>
+                            </div>
+                         <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">1</div>
+                                <div class="col-xs-2">
+                                    <img src="img/wicketkeeper.PNG" /></div>
+                                <div class="col-xs-2">Dhoni</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">8,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                            <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">2</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Virat</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">8,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                 <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">3</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Dhawan</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">5,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                               <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">4</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Hussey</div>
+                                <div class="col-xs-2">Foriegn</div>
+                                <div class="col-xs-2">5,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">5</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Bevan</div>
+                                <div class="col-xs-2">Foriegn</div>
+                                <div class="col-xs-2">8,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                               <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">6</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat_ball.PNG" /></div>
+                                <div class="col-xs-2">Jadeja</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">4,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                               <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">7</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat_ball.PNG" /></div>
+                                <div class="col-xs-2">Smith</div>
+                                <div class="col-xs-2">Foriegn</div>
+                                <div class="col-xs-2">6,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                               <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">8</div>
+                                <div class="col-xs-2">
+                                    <img src="img/ball.PNG" /></div>
+                                <div class="col-xs-2">Ishant</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">3,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                 <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">9</div>
+                                <div class="col-xs-2">
+                                    <img src="img/ball.PNG" /></div>
+                                <div class="col-xs-2">Ashwin</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">5,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">10</div>
+                                <div class="col-xs-2">
+                                    <img src="img/ball.PNG" /></div>
+                                <div class="col-xs-2">Lee</div>
+                                <div class="col-xs-2">Foriegn</div>
+                                <div class="col-xs-2">7,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                 <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">11</div>
+                                <div class="col-xs-2">
+                                    <img src="img/ball.PNG" /></div>
+                                <div class="col-xs-2">Kumar</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">3,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="column two">
+
+                      <div class="colOneSplitOne">
+                        <div class="unitCntr" style="width:485px;"> 
+                            <div class="unitHeader">
+                                <span style="font-weight: bold;font-size: larger;">Other Players</span>
+                            </div>
+
+                            <div class="teamcreationselectouter" style="width:480px;margin-left: 83px;">
+                                <div style="float:left;padding:5px"><a class="btn btn-default btn-sm" href="#" >Batsmen&nbsp;<i class="fa fa-filter"></i></a></div>
+                                <div style="float:left;padding:5px"><a class="btn btn-default btn-sm" href="#" >Bowler&nbsp;<i class="fa fa-filter"></i></a></div>
+                                <div style="float:left;padding:5px"><a class="btn btn-default btn-sm" href="#" >All Rounders&nbsp;<i class="fa fa-filter"></i></a></div>
+                            </div>
+
+                              <div class="container-fluid">
+                            <div class="row PlayerSorterHead" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">Move</div>
+                                <div class="col-xs-2">#</div>
+                                <div class="col-xs-2">Role</div>
+                                <div class="col-xs-2">Name</div>
+                                <div class="col-xs-2">Category</div>
+                                <div class="col-xs-2">Price</div>
+                                
+                            </div>
+                         <div class="row" style="border: 1px solid #ddd;">
+                              <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                <div class="col-xs-2">1</div>
+                                <div class="col-xs-2 ">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Mishra</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">2,00,000</div>
+                               
+                            </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">2</div>
+                                    <div class="col-xs-2 ">
+                                         <img src="img/bat_ball.PNG" /></div>
+                                    <div class="col-xs-2">Bravo</div>
+                                    <div class="col-xs-2">foriegn</div>
+                                    <div class="col-xs-2">5,00,000</div>
+                                </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">3</div>
+                                    <div class="col-xs-2 ">
+                                        <img src="img/ball.PNG" /></div>
+                                    <div class="col-xs-2">Pandey</div>
+                                    <div class="col-xs-2">Indian</div>
+                                    <div class="col-xs-2">1,00,000</div>
+                                </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">4</div>
+                                    <div class="col-xs-2 ">
+                                        <img src="img/bat.PNG" /></div>
+                                    <div class="col-xs-2">Dravid</div>
+                                    <div class="col-xs-2">Indian</div>
+                                    <div class="col-xs-2">9,00,000</div>
+                                </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">5</div>
+                                    <div class="col-xs-2 ">
+                                        <img src="img/ball.PNG" /></div>
+                                    <div class="col-xs-2">steyn</div>
+                                    <div class="col-xs-2">foriegn</div>
+                                    <div class="col-xs-2">5,00,000</div>
+                                </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">6</div>
+                                    <div class="col-xs-2 ">
+                                        <img src="img/ball.PNG" /></div>
+                                    <div class="col-xs-2">Shami</div>
+                                    <div class="col-xs-2">Indian</div>
+                                    <div class="col-xs-2">4,00,000</div>
+                                </div>
+
+                              
+
+                             
+
+                            </div>
+
+                 </div>
+                       </div>
+               
+               </div>
+
+                 <div class="column two">
+                      <div class="colOneSplitOne">
+                          <div class="unitCntr" style="width:485px;"> 
+                                <div class="unitHeader">
+                                    <span style="font-weight: bold;font-size: larger;">Player Profile</span>
+                                </div>
+                              <div style="float:left">
+                                  <img src="img/Dhoni.png" />
+                              </div>
+                              <div style="float:left;margin-top:8pc">
+                                
+                                    <span style="font-weight: bold;font-size: 33px;text-transform: uppercase;;text-align:center">M S Dhoni</span>
+                                
+                              </div>
+                              <hr />
+                                <div class="container-fluid" style="clear:both;text-transform: uppercase">
+                                   
+                                    <div class="row top-buffer">
+                                        <div class="col-md-8">Rating :</div>
+                                        <div class="col-md-4">
+                                            <img src="img/5-star.png" /></div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Role :</div>
+                                        <div class="col-md-4">WicketKeeper Batsman</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Price :</div>
+                                        <div class="col-md-4">8,00,000</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Batting Average :</div>
+                                        <div class="col-md-4">50.40</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Nationality :</div>
+                                        <div class="col-md-4">Indian</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Born :</div>
+                                        <div class="col-md-4">July 7, 1981, Ranchi, Jharkand</div>
+                                    </div>
+                                   
+                                      <div class="row top-buffer">
+                                        <div class="col-md-8">Batting Style :</div>
+                                        <div class="col-md-4">Right-Handed</div>
+                                    </div>
+                                    <div class="row top-buffer">
+                                        <div class="col-md-8">Bowling Style :</div>
+                                        <div class="col-md-4">Right Arm Medium</div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                </div>
+            </div>
+
+
+              <div class="tab-pane" id="tab_Pune">
+                <div class="teamnameimage">
+                    <img src="img/TeamImage.gif" /> 
+                </div>
+                <div class="TeamName">Pune</div>
+                <br /><br /><br /><br />
+               <hr />
+                <div class="column one">
+                    <div class="colOneSplitOne">
+                        <div class="unitCntr" style="width:485px;"> 
+                            <div class="unitHeader">
+                                <span style="font-weight: bold;font-size: larger;">Current Squad</span>
+                            </div>
+                            <div class="teamcreationselectouter">
+               
+              <div class="budgetleft" style="text-align:center;">
+               <!-- <div class="onoff" id="on_glow" ></div>
+                <div class="onoffglow" id="on"  ></div> -->
+               <span class="statstextspan" style="font-weight:bold;display: inline-block;float: none;margin-top: 6px;"> Budget Left: &nbsp;50,000</span>
+                <!--<p id="budgetleftval" style="font-weight:bold;display: inline-block;float: none;">50,000</p>-->
+              </div>
+               <div class="subsleft"style="text-align:center;">
+               <!--  <div class="onoff" id="on_glow" ></div>
+                <div class="onoffglow" id="on"  ></div> -->
+               <span class="statstextspan"  style="font-weight:bold;display: inline-block;float: none;margin-top: 6px;"> Subs Left:&nbsp;8</span>
+                <!--<p class="statstextp" id="subsleftval" style="font-weight:bold;">8</p>-->
+              </div>
+              
+               <div class="teamblnce" style="width:160px;">
+                <div class="onoff" id="Div9"></div>
+                <div class="onoffglow" id="Div10"></div>
+                <p class="statstextp" style="line-height: 13px;margin-top: 11px;">Squad Balance</p>
+                
+                
+              </div>
+              <div class="elevplayers" style="width:160px;">
+                <div class="onoff" id="Div11"></div>
+                <div class="onoffglow" id="Div12" style="display: block;"></div>
+                 <p class="statstextp" style="line-height: 13px;margin-top: 11px;">Eleven Players</p>
+                
+              </div>
+             
+              <div class="franchspread" style="width:160px;border-right:0px;">
+                <div class="onoff" id="Div13"></div>
+                <div class="onoffglow" id="Div14"></div>
+                 <p class="statstextp" style="line-height: 13px;margin-top: 11px;">Team Spread</p>
+               
+              </div>
+
+          
+              
+            </div>
+                           <div class="container-fluid">
+                            <div class="row PlayerSorterHead" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">#</div>
+                                <div class="col-xs-2">Role</div>
+                                <div class="col-xs-2">Name</div>
+                                <div class="col-xs-2">Category</div>
+                                <div class="col-xs-2">Price</div>
+                                <div class="col-xs-2">Move</div>
+                            </div>
+                         <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">1</div>
+                                <div class="col-xs-2">
+                                    <img src="img/wicketkeeper.PNG" /></div>
+                                <div class="col-xs-2">Dhoni</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">8,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                            <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">2</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Virat</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">8,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                 <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">3</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Dhawan</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">5,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                               <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">4</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Hussey</div>
+                                <div class="col-xs-2">Foriegn</div>
+                                <div class="col-xs-2">5,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">5</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Bevan</div>
+                                <div class="col-xs-2">Foriegn</div>
+                                <div class="col-xs-2">8,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                               <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">6</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat_ball.PNG" /></div>
+                                <div class="col-xs-2">Jadeja</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">4,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                               <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">7</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat_ball.PNG" /></div>
+                                <div class="col-xs-2">Smith</div>
+                                <div class="col-xs-2">Foriegn</div>
+                                <div class="col-xs-2">6,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                               <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">8</div>
+                                <div class="col-xs-2">
+                                    <img src="img/ball.PNG" /></div>
+                                <div class="col-xs-2">Ishant</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">3,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                 <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">9</div>
+                                <div class="col-xs-2">
+                                    <img src="img/ball.PNG" /></div>
+                                <div class="col-xs-2">Ashwin</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">5,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">10</div>
+                                <div class="col-xs-2">
+                                    <img src="img/ball.PNG" /></div>
+                                <div class="col-xs-2">Lee</div>
+                                <div class="col-xs-2">Foriegn</div>
+                                <div class="col-xs-2">7,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                 <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">11</div>
+                                <div class="col-xs-2">
+                                    <img src="img/ball.PNG" /></div>
+                                <div class="col-xs-2">Kumar</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">3,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="column two">
+
+                      <div class="colOneSplitOne">
+                        <div class="unitCntr" style="width:485px;"> 
+                            <div class="unitHeader">
+                                <span style="font-weight: bold;font-size: larger;">Other Players</span>
+                            </div>
+
+                            <div class="teamcreationselectouter" style="width:480px;margin-left: 83px;">
+                                <div style="float:left;padding:5px"><a class="btn btn-default btn-sm" href="#" >Batsmen&nbsp;<i class="fa fa-filter"></i></a></div>
+                                <div style="float:left;padding:5px"><a class="btn btn-default btn-sm" href="#" >Bowler&nbsp;<i class="fa fa-filter"></i></a></div>
+                                <div style="float:left;padding:5px"><a class="btn btn-default btn-sm" href="#" >All Rounders&nbsp;<i class="fa fa-filter"></i></a></div>
+                            </div>
+
+                              <div class="container-fluid">
+                            <div class="row PlayerSorterHead" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">Move</div>
+                                <div class="col-xs-2">#</div>
+                                <div class="col-xs-2">Role</div>
+                                <div class="col-xs-2">Name</div>
+                                <div class="col-xs-2">Category</div>
+                                <div class="col-xs-2">Price</div>
+                                
+                            </div>
+                         <div class="row" style="border: 1px solid #ddd;">
+                              <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                <div class="col-xs-2">1</div>
+                                <div class="col-xs-2 ">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Mishra</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">2,00,000</div>
+                               
+                            </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">2</div>
+                                    <div class="col-xs-2 ">
+                                         <img src="img/bat_ball.PNG" /></div>
+                                    <div class="col-xs-2">Bravo</div>
+                                    <div class="col-xs-2">foriegn</div>
+                                    <div class="col-xs-2">5,00,000</div>
+                                </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">3</div>
+                                    <div class="col-xs-2 ">
+                                        <img src="img/ball.PNG" /></div>
+                                    <div class="col-xs-2">Pandey</div>
+                                    <div class="col-xs-2">Indian</div>
+                                    <div class="col-xs-2">1,00,000</div>
+                                </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">4</div>
+                                    <div class="col-xs-2 ">
+                                        <img src="img/bat.PNG" /></div>
+                                    <div class="col-xs-2">Dravid</div>
+                                    <div class="col-xs-2">Indian</div>
+                                    <div class="col-xs-2">9,00,000</div>
+                                </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">5</div>
+                                    <div class="col-xs-2 ">
+                                        <img src="img/ball.PNG" /></div>
+                                    <div class="col-xs-2">steyn</div>
+                                    <div class="col-xs-2">foriegn</div>
+                                    <div class="col-xs-2">5,00,000</div>
+                                </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">6</div>
+                                    <div class="col-xs-2 ">
+                                        <img src="img/ball.PNG" /></div>
+                                    <div class="col-xs-2">Shami</div>
+                                    <div class="col-xs-2">Indian</div>
+                                    <div class="col-xs-2">4,00,000</div>
+                                </div>
+
+                              
+
+                             
+
+                            </div>
+
+                 </div>
+                       </div>
+               
+               </div>
+
+                 <div class="column two">
+                      <div class="colOneSplitOne">
+                          <div class="unitCntr" style="width:485px;"> 
+                                <div class="unitHeader">
+                                    <span style="font-weight: bold;font-size: larger;">Player Profile</span>
+                                </div>
+                              <div style="float:left">
+                                  <img src="img/Dhoni.png" />
+                              </div>
+                              <div style="float:left;margin-top:8pc">
+                                
+                                    <span style="font-weight: bold;font-size: 33px;text-transform: uppercase;;text-align:center">M S Dhoni</span>
+                                
+                              </div>
+                              <hr />
+                                <div class="container-fluid" style="clear:both;text-transform: uppercase">
+                                   
+                                    <div class="row top-buffer">
+                                        <div class="col-md-8">Rating :</div>
+                                        <div class="col-md-4">
+                                            <img src="img/5-star.png" /></div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Role :</div>
+                                        <div class="col-md-4">WicketKeeper Batsman</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Price :</div>
+                                        <div class="col-md-4">8,00,000</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Batting Average :</div>
+                                        <div class="col-md-4">50.40</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Nationality :</div>
+                                        <div class="col-md-4">Indian</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Born :</div>
+                                        <div class="col-md-4">July 7, 1981, Ranchi, Jharkand</div>
+                                    </div>
+                                  
+                                      <div class="row top-buffer">
+                                        <div class="col-md-8">Batting Style :</div>
+                                        <div class="col-md-4">Right-Handed</div>
+                                    </div>
+                                    <div class="row top-buffer">
+                                        <div class="col-md-8">Bowling Style :</div>
+                                        <div class="col-md-4">Right Arm Medium</div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="tab_Kolkata">
+                <div class="teamnameimage">
+                    <img src="img/TeamImage.gif" /> 
+                </div>
+                <div class="TeamName">Kolkata</div>
+                <br /><br /><br /><br />
+               <hr />
+               <div class="column one">
+                    <div class="colOneSplitOne">
+                        <div class="unitCntr" style="width:485px;"> 
+                            <div class="unitHeader">
+                                <span style="font-weight: bold;font-size: larger;">Current Squad</span>
+                            </div>
+                            <div class="teamcreationselectouter">
+               
+              <div class="budgetleft" style="text-align:center;">
+               <!-- <div class="onoff" id="on_glow" ></div>
+                <div class="onoffglow" id="on"  ></div> -->
+               <span class="statstextspan" style="font-weight:bold;display: inline-block;float: none;margin-top: 6px;"> Budget Left: &nbsp;50,000</span>
+                <!--<p id="budgetleftval" style="font-weight:bold;display: inline-block;float: none;">50,000</p>-->
+              </div>
+               <div class="subsleft"style="text-align:center;">
+               <!--  <div class="onoff" id="on_glow" ></div>
+                <div class="onoffglow" id="on"  ></div> -->
+               <span class="statstextspan"  style="font-weight:bold;display: inline-block;float: none;margin-top: 6px;"> Subs Left:&nbsp;8</span>
+                <!--<p class="statstextp" id="subsleftval" style="font-weight:bold;">8</p>-->
+              </div>
+              
+               <div class="teamblnce" style="width:160px;">
+                <div class="onoff" id="Div15"></div>
+                <div class="onoffglow" id="Div16"></div>
+                <p class="statstextp" style="line-height: 13px;margin-top: 11px;">Squad Balance</p>
+                
+                
+              </div>
+              <div class="elevplayers" style="width:160px;">
+                <div class="onoff" id="Div17"></div>
+                <div class="onoffglow" id="Div18" style="display: block;"></div>
+                 <p class="statstextp" style="line-height: 13px;margin-top: 11px;">Eleven Players</p>
+                
+              </div>
+             
+              <div class="franchspread" style="width:160px;border-right:0px;">
+                <div class="onoff" id="Div19"></div>
+                <div class="onoffglow" id="Div20"></div>
+                 <p class="statstextp" style="line-height: 13px;margin-top: 11px;">Team Spread</p>
+               
+              </div>
+
+          
+              
+            </div>
+                           <div class="container-fluid">
+                            <div class="row PlayerSorterHead" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">#</div>
+                                <div class="col-xs-2">Role</div>
+                                <div class="col-xs-2">Name</div>
+                                <div class="col-xs-2">Category</div>
+                                <div class="col-xs-2">Price</div>
+                                <div class="col-xs-2">Move</div>
+                            </div>
+                         <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">1</div>
+                                <div class="col-xs-2">
+                                    <img src="img/wicketkeeper.PNG" /></div>
+                                <div class="col-xs-2">Dhoni</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">8,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                            <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">2</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Virat</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">8,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                 <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">3</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Dhawan</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">5,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                               <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">4</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Hussey</div>
+                                <div class="col-xs-2">Foriegn</div>
+                                <div class="col-xs-2">5,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">5</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Bevan</div>
+                                <div class="col-xs-2">Foriegn</div>
+                                <div class="col-xs-2">8,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                               <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">6</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat_ball.PNG" /></div>
+                                <div class="col-xs-2">Jadeja</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">4,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                               <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">7</div>
+                                <div class="col-xs-2">
+                                    <img src="img/bat_ball.PNG" /></div>
+                                <div class="col-xs-2">Smith</div>
+                                <div class="col-xs-2">Foriegn</div>
+                                <div class="col-xs-2">6,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                               <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">8</div>
+                                <div class="col-xs-2">
+                                    <img src="img/ball.PNG" /></div>
+                                <div class="col-xs-2">Ishant</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">3,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                 <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">9</div>
+                                <div class="col-xs-2">
+                                    <img src="img/ball.PNG" /></div>
+                                <div class="col-xs-2">Ashwin</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">5,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">10</div>
+                                <div class="col-xs-2">
+                                    <img src="img/ball.PNG" /></div>
+                                <div class="col-xs-2">Lee</div>
+                                <div class="col-xs-2">Foriegn</div>
+                                <div class="col-xs-2">7,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                                 <div class="row" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">11</div>
+                                <div class="col-xs-2">
+                                    <img src="img/ball.PNG" /></div>
+                                <div class="col-xs-2">Kumar</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">3,00,000</div>
+                                <div class="col-xs-2"><i class="fa fa-hand-o-right fa-1"></i></div>
+                            </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="column two">
+
+                      <div class="colOneSplitOne">
+                        <div class="unitCntr" style="width:485px;"> 
+                            <div class="unitHeader">
+                                <span style="font-weight: bold;font-size: larger;">Other Players</span>
+                            </div>
+
+                            <div class="teamcreationselectouter" style="width:480px;margin-left: 83px;">
+                                <div style="float:left;padding:5px"><a class="btn btn-default btn-sm" href="#" >Batsmen&nbsp;<i class="fa fa-filter"></i></a></div>
+                                <div style="float:left;padding:5px"><a class="btn btn-default btn-sm" href="#" >Bowler&nbsp;<i class="fa fa-filter"></i></a></div>
+                                <div style="float:left;padding:5px"><a class="btn btn-default btn-sm" href="#" >All Rounders&nbsp;<i class="fa fa-filter"></i></a></div>
+                            </div>
+
+                              <div class="container-fluid">
+                            <div class="row PlayerSorterHead" style="border: 1px solid #ddd;">
+                                <div class="col-xs-2">Move</div>
+                                <div class="col-xs-2">#</div>
+                                <div class="col-xs-2">Role</div>
+                                <div class="col-xs-2">Name</div>
+                                <div class="col-xs-2">Category</div>
+                                <div class="col-xs-2">Price</div>
+                                
+                            </div>
+                         <div class="row" style="border: 1px solid #ddd;">
+                              <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                <div class="col-xs-2">1</div>
+                                <div class="col-xs-2 ">
+                                    <img src="img/bat.PNG" /></div>
+                                <div class="col-xs-2">Mishra</div>
+                                <div class="col-xs-2">Indian</div>
+                                <div class="col-xs-2">2,00,000</div>
+                               
+                            </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">2</div>
+                                    <div class="col-xs-2 ">
+                                         <img src="img/bat_ball.PNG" /></div>
+                                    <div class="col-xs-2">Bravo</div>
+                                    <div class="col-xs-2">foriegn</div>
+                                    <div class="col-xs-2">5,00,000</div>
+                                </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">3</div>
+                                    <div class="col-xs-2 ">
+                                        <img src="img/ball.PNG" /></div>
+                                    <div class="col-xs-2">Pandey</div>
+                                    <div class="col-xs-2">Indian</div>
+                                    <div class="col-xs-2">1,00,000</div>
+                                </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">4</div>
+                                    <div class="col-xs-2 ">
+                                        <img src="img/bat.PNG" /></div>
+                                    <div class="col-xs-2">Dravid</div>
+                                    <div class="col-xs-2">Indian</div>
+                                    <div class="col-xs-2">9,00,000</div>
+                                </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">5</div>
+                                    <div class="col-xs-2 ">
+                                        <img src="img/ball.PNG" /></div>
+                                    <div class="col-xs-2">steyn</div>
+                                    <div class="col-xs-2">foriegn</div>
+                                    <div class="col-xs-2">5,00,000</div>
+                                </div>
+
+                                <div class="row" style="border: 1px solid #ddd;">
+                                    <div class="col-xs-2"><i class="fa fa-hand-o-left fa-1"></i></div>
+                                    <div class="col-xs-2">6</div>
+                                    <div class="col-xs-2 ">
+                                        <img src="img/ball.PNG" /></div>
+                                    <div class="col-xs-2">Shami</div>
+                                    <div class="col-xs-2">Indian</div>
+                                    <div class="col-xs-2">4,00,000</div>
+                                </div>
+
+                              
+
+                             
+
+                            </div>
+
+                 </div>
+                       </div>
+               
+               </div>
+
+                 <div class="column two">
+                      <div class="colOneSplitOne">
+                          <div class="unitCntr" style="width:485px;"> 
+                                <div class="unitHeader">
+                                    <span style="font-weight: bold;font-size: larger;">Player Profile</span>
+                                </div>
+                              <div style="float:left">
+                                  <img src="img/Dhoni.png" />
+                              </div>
+                              <div style="float:left;margin-top:8pc">
+                                
+                                    <span style="font-weight: bold;font-size: 33px;text-transform: uppercase;;text-align:center">M S Dhoni</span>
+                                
+                              </div>
+                              <hr />
+                                <div class="container-fluid" style="clear:both;text-transform: uppercase">
+                                   
+                                    <div class="row top-buffer">
+                                        <div class="col-md-8">Rating :</div>
+                                        <div class="col-md-4">
+                                            <img src="img/5-star.png" /></div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Role :</div>
+                                        <div class="col-md-4">WicketKeeper Batsman</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Price :</div>
+                                        <div class="col-md-4">8,00,000</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Batting Average :</div>
+                                        <div class="col-md-4">50.40</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Nationality :</div>
+                                        <div class="col-md-4">Indian</div>
+                                    </div>
+                                     <div class="row top-buffer">
+                                        <div class="col-md-8">Born :</div>
+                                        <div class="col-md-4">July 7, 1981, Ranchi, Jharkand</div>
+                                    </div>
+                                    
+                                      <div class="row top-buffer">
+                                        <div class="col-md-8">Batting Style :</div>
+                                        <div class="col-md-4">Right-Handed</div>
+                                    </div>
+                                    <div class="row top-buffer">
+                                        <div class="col-md-8">Bowling Style :</div>
+                                        <div class="col-md-4">Right Arm Medium</div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </div>
+     
+    </section>
+
+    <!-- Contact Section -->
+    <section id="CreateMatch" class="container content-section text-center">
+        <div class="row">
+            <!--<div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Start Bootstrap</h2>
+                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
+                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>-->
+        </div>
+    </section>
+    <section id="Tournament" class="container content-section text-center">
+        <div class="row">
+          <!--  <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Start Bootstrap</h2>
+                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
+                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>-->
+        </div>
+    </section>
+    <!-- Map Section -->
+    <!--<div id="map"></div>-->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright LKS consulting Cricket Simulator 2014</p>
+        </div>
+    </footer>
+    <div class="modal fade" id="myModel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Player Auction</h4>
+                </div>
+                <div class="modal-body">
+
+                   <div class="container">
+      
+      
+        <div class="form-group">
+          <label for="email">Sold For:</label>
+          <input type="text" id="email" placeholder="Enter Price">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Team:</label>
+         <select style="margin-left: 18px;width: 157px;">
+             <option>Bangalore</option>
+             <option>Chennai</option>
+             <option>Pune</option>
+             <option>Kolkata</option>
+         </select>
+        </div>
+        
+        
+      
+    </div>
+                
+
+                   
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default">Save changes</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>
