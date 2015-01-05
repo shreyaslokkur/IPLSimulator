@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:drools="http://drools.org/schema/drools-spring"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+
+                           http://drools.org/schema/drools-spring  http://drools.org/schema/drools-spring.xsd
+                           ">
+    <!-- KNOWLEDGE BASE FOR A GIVEN TYPE -->
+    <drools:kbase id="iplKBase">
+        <drools:resources>
+            <drools:resource type="DRL"
+            source="classpath:rules/rahul.drl"/>
+            <drools:resource type="DRL"
+                             source="classpath:rules/harbhajan.drl"/>
+            <drools:resource type="DRL"
+                             source="classpath:rules/rcb.drl"/>
+           <drools:resource type="DRL"
+                             source="classpath:rules/coaching.drl"/>
+        </drools:resources>
+    </drools:kbase>
+    <drools:ksession id="iplKSession" name="iplKSession" type="stateful" kbase="iplKBase"/>
+
+</beans>

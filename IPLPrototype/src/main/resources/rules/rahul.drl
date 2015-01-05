@@ -1,0 +1,33 @@
+package com.siksha.prototype
+import com.siksha.prototype.model.Player
+import com.siksha.prototype.enums.Cricketer
+import com.siksha.prototype.model.Match
+import com.siksha.prototype.utility.MatchUtility
+import com.siksha.prototype.enums.Venue
+import com.siksha.prototype.utility.PlayerUtility
+
+
+
+rule "Rahul_Rule_1"
+dialect "mvel"
+when
+    $match : Match();
+    $matchUtility : MatchUtility();
+    $playerUtility : PlayerUtility();
+    $player : Player( (playerName == "Rahul Dravid") && ($playerUtility.isTeammate("Anil Kumble")))
+then
+    System.out.println("Rahul Dravid - Anil Kumble rule Executed : 60 points added");
+    modify ( $player )  { addPoints(60) }
+end
+
+rule "Rahul_Rule_2"
+dialect "mvel"
+when
+    $match : Match();
+    $playerUtility : PlayerUtility()
+    $player : Player( (playerName == "Rahul Dravid") && ($playerUtility.isOpponent("Sachin Tendulkar")))
+then
+    System.out.println("Rahul Dravid - Sachin Tendulkar rule Executed : 50 points subtracted");
+    modify ( $player )  { addPoints( -50 ) }
+end
+

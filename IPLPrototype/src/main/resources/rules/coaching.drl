@@ -1,0 +1,55 @@
+package com.siksha.prototype
+import com.siksha.prototype.model.Player
+import com.siksha.prototype.enums.Cricketer
+import com.siksha.prototype.model.Match
+import com.siksha.prototype.utility.MatchUtility
+
+
+rule "Coaching_Rule_1"
+dialect "mvel"
+when
+    $player : Player(coachingPoints == 1);
+then
+    System.out.println("Coaching points 1 rule Executed : 100 points subtracted");
+    modify ( $player )  { addPoints(-100) }
+end
+
+rule "Coaching_Rule_2"
+dialect "mvel"
+when
+    $player : Player(coachingPoints == 2);
+then
+    System.out.println("Coaching points 2 rule Executed : 50 points subtracted");
+    modify ( $player )  { addPoints(-50) }
+end
+
+rule "Coaching_Rule_3"
+dialect "mvel"
+when
+    $player : Player(coachingPoints == 3);
+then
+    System.out.println("Coaching points 3 rule Executed : no points added/subtracted");
+    modify ( $player )  { addPoints(0) }
+end
+
+rule "Coaching_Rule_4"
+dialect "mvel"
+when
+    $player : Player(coachingPoints == 4);
+then
+    System.out.println("Coaching points 4 rule Executed : 50 points added");
+    modify ( $player )  { addPoints(50) }
+end
+
+rule "Coaching_Rule_5"
+dialect "mvel"
+when
+    $player : Player(coachingPoints == 5);
+then
+    System.out.println("Coaching points 5 rule Executed : 100 points added");
+    modify ( $player )  { addPoints(100) }
+end
+
+
+
+

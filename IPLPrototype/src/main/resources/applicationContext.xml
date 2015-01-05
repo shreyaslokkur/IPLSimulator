@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <import resource="classpath:drools-context.xml"/>
+    <!-- Show Spring where to search for the beans (in which packages) -->
+
+    <bean class="com.siksha.prototype.RuleExecutor" id="ruleExecutor"/>
+    <bean class="com.siksha.prototype.utility.TeamUtility" id="teamUtility"/>
+    <bean class="com.siksha.prototype.utility.MatchUtility" id="matchUtility"/>
+    <bean class="com.siksha.prototype.utility.PlayerUtility" id="playerUtility" />
+</beans>

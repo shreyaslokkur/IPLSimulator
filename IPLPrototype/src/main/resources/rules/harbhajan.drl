@@ -1,0 +1,30 @@
+package com.siksha.prototype
+import com.siksha.prototype.model.Player
+import com.siksha.prototype.enums.Cricketer
+import com.siksha.prototype.model.Match
+import com.siksha.prototype.utility.MatchUtility
+import com.siksha.prototype.model.Team
+import com.siksha.prototype.utility.PlayerUtility
+
+rule "Harbhajan_Rule_1"
+dialect "mvel"
+when
+    $match : Match();
+    $matchUtility : MatchUtility();
+    $player : Player( (playerName == "Harbhajan Singh") && ($matchUtility.isOwnerComing($player,$match) == (true)))
+then
+    System.out.println("Harbhajan Singh - Nita Ambani rule Executed : 50 points added");
+    modify ( $player )  { addPoints( 50 ) }
+end
+
+
+rule "Harbhajan_Rule_2"
+dialect "mvel"
+when
+    $match : Match();
+    $playerUtility : PlayerUtility()
+    $player : Player( (playerName == "Harbhajan Singh") && ($playerUtility.isTeammate("Sreesanth")))
+then
+    System.out.println("Harbhajan Singh - Sreesanth rule Executed : 90 points subtracted");
+    modify ( $player )  { addPoints( -90 ) }
+end

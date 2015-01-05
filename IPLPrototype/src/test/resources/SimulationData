@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data>
+    <Match>
+        <HomeTeam>RCB</HomeTeam>
+        <VisitingTeam>MI</VisitingTeam>
+        <IsHomeTeamOwnerVisiting>true</IsHomeTeamOwnerVisiting>
+        <IsVisitingTeamOwnerVisiting>true</IsVisitingTeamOwnerVisiting>
+        <Venue>Bangalore</Venue>
+        <Team id="1" name="RCB">
+            <Players>
+                <Player id="1">
+                    <Name>Rahul Dravid</Name>
+                    <Points>100</Points>
+                    <Cricketer>Batsman</Cricketer>
+                    <Coaching>5</Coaching>
+                </Player>
+                <Player id="2">
+                    <Name>Anil Kumble</Name>
+                    <Points>80</Points>
+                    <Cricketer>Bowler</Cricketer>
+                    <Coaching>3</Coaching>
+                </Player>
+                <Player id="3">
+                    <Name>Virat Kohli</Name>
+                    <Points>75</Points>
+                    <Cricketer>Batsman</Cricketer>
+                    <Coaching>1</Coaching>
+                </Player>
+                <Player id="4">
+                    <Name>Kevin Pietersen</Name>
+                    <Points>65</Points>
+                    <Cricketer>Batsman</Cricketer>
+                    <Coaching>2</Coaching>
+                </Player>
+                <Player id="5">
+                    <Name>Zaheer Khan</Name>
+                    <Points>60</Points>
+                    <Cricketer>Bowler</Cricketer>
+                    <Coaching>4</Coaching>
+                </Player>
+                <Player id="6">
+                    <Name>Chris Gayle</Name>
+                    <Points>85</Points>
+                    <Cricketer>AllRounder</Cricketer>
+                    <Coaching>5</Coaching>
+                </Player>
+                <Player id="7">
+                    <Name>AB de Villiers</Name>
+                    <Points>100</Points>
+                    <Cricketer>Wicketkeeper</Cricketer>
+                    <Coaching>3</Coaching>
+                </Player>
+                <Player id="8">
+                    <Name>Varun Aaron</Name>
+                    <Points>40</Points>
+                    <Cricketer>Bowler</Cricketer>
+                    <Coaching>1</Coaching>
+                </Player>
+                <Player id="9">
+                    <Name>Y Chahal</Name>
+                    <Points>65</Points>
+                    <Cricketer>Bowler</Cricketer>
+                    <Coaching>4</Coaching>
+                </Player>
+                <Player id="10">
+                    <Name>Mitchell Starc</Name>
+                    <Points>70</Points>
+                    <Cricketer>Bowler</Cricketer>
+                    <Coaching>3</Coaching>
+                </Player>
+                <Player id="11">
+                    <Name>Parthiv Patel</Name>
+                    <Points>65</Points>
+                    <Cricketer>Batsman</Cricketer>
+                    <Coaching>4</Coaching>
+                </Player>
+            </Players>
+
+        </Team>
+        <Team id="2" name="MI">
+            <Players>
+                <Player id="1">
+                    <Name>Sachin Tendulkar</Name>
+                    <Points>90</Points>
+                    <Cricketer>Batsman</Cricketer>
+                    <Coaching>2</Coaching>
+                </Player>
+                <Player id="2">
+                    <Name>M S Dhoni</Name>
+                    <Points>95</Points>
+                    <Cricketer>Wicketkeeper</Cricketer>
+                    <Coaching>4</Coaching>
+                </Player>
+                <Player id="3">
+                    <Name>Harbhajan Singh</Name>
+                    <Points>50</Points>
+                    <Cricketer>Bowler</Cricketer>
+                    <Coaching>3</Coaching>
+                </Player>
+                <Player id="4">
+                    <Name>Sreesanth</Name>
+                    <Points>40</Points>
+                    <Cricketer>Bowler</Cricketer>
+                    <Coaching>5</Coaching>
+                </Player>
+                <Player id="5">
+                    <Name>Rohit Sharma</Name>
+                    <Points>80</Points>
+                    <Cricketer>Batsman</Cricketer>
+                    <Coaching>3</Coaching>
+                </Player>
+                <Player id="6">
+                    <Name>Lasith Malinga</Name>
+                    <Points>90</Points>
+                    <Cricketer>Bowler</Cricketer>
+                    <Coaching>5</Coaching>
+                </Player>
+                <Player id="7">
+                    <Name>Michael Hussey</Name>
+                    <Points>100</Points>
+                    <Cricketer>Batsman</Cricketer>
+                    <Coaching>3</Coaching>
+                </Player>
+                <Player id="8">
+                    <Name>Corey Anderson</Name>
+                    <Points>60</Points>
+                    <Cricketer>AllRounder</Cricketer>
+                    <Coaching>3</Coaching>
+                </Player>
+                <Player id="9">
+                    <Name>Pragyan Ojha</Name>
+                    <Points>50</Points>
+                    <Cricketer>Bowler</Cricketer>
+                    <Coaching>2</Coaching>
+                </Player>
+                <Player id="10">
+                    <Name>Kieron Pollard</Name>
+                    <Points>80</Points>
+                    <Cricketer>AllRounder</Cricketer>
+                    <Coaching>4</Coaching>
+                </Player>
+                <Player id="11">
+                    <Name>L Simmons</Name>
+                    <Points>20</Points>
+                    <Cricketer>Bowler</Cricketer>
+                    <Coaching>5</Coaching>
+                </Player>
+            </Players>
+        </Team>
+
+    </Match>
+
+
+
+
+
+
+</Data>
+
+
+
+

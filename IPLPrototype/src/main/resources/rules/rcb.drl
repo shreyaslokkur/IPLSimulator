@@ -1,0 +1,24 @@
+package com.siksha.prototype
+import com.siksha.prototype.model.Player
+import com.siksha.prototype.enums.Cricketer
+import com.siksha.prototype.model.Match
+import com.siksha.prototype.utility.MatchUtility
+import com.siksha.prototype.enums.Venue
+import com.siksha.prototype.utility.PlayerUtility
+import com.siksha.prototype.enums.Teams
+import com.siksha.prototype.utility.TeamUtility
+
+rule "RCB_Rule_1"
+dialect "mvel"
+when
+    $match : Match();
+    $player : Player();
+    $teamUtility : TeamUtility(isTeam($player.team, Teams.RCB));
+    $matchUtility : MatchUtility(isPlayingIn(Venue.Bangalore, $match.venue));
+then
+    System.out.println("RCB player - Chinnaswamy rule Executed : 50 points added");
+    modify ( $player )  { addPoints(50) }
+end
+
+
+
